@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">一杯</string>
+    <string name="splash_title">一杯</string>
+    <string name="splash_subtitle">记得喝水，保持健康</string>
+    <string name="sleep_inferred">由手机屏幕使用时间推断</string>
+    <string name="sleep_manual">已手动修改</string>
+</resources>

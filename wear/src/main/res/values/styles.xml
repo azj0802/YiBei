@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WearTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">#1A1A2E</item>
+    </style>
+</resources>

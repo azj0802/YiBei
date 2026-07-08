@@ -1,0 +1,120 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mergeDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :wear:preBuild UP-TO-DATE
+> Task :wear:preDebugBuild UP-TO-DATE
+> Task :wear:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :wear:checkKotlinGradlePluginConfigurationErrors
+> Task :wear:checkDebugAarMetadata UP-TO-DATE
+> Task :wear:generateDebugResValues UP-TO-DATE
+> Task :wear:mapDebugSourceSetPaths UP-TO-DATE
+> Task :wear:generateDebugResources UP-TO-DATE
+> Task :wear:mergeDebugResources UP-TO-DATE
+> Task :wear:packageDebugResources UP-TO-DATE
+> Task :wear:parseDebugLocalResources UP-TO-DATE
+> Task :wear:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :wear:extractDeepLinksDebug UP-TO-DATE
+> Task :wear:processDebugMainManifest UP-TO-DATE
+> Task :wear:processDebugManifest UP-TO-DATE
+> Task :wear:processDebugManifestForPackage UP-TO-DATE
+> Task :wear:processDebugResources UP-TO-DATE
+> Task :wear:compileDebugKotlin UP-TO-DATE
+> Task :wear:javaPreCompileDebug UP-TO-DATE
+> Task :wear:compileDebugJavaWithJavac NO-SOURCE
+> Task :wear:mergeDebugShaders UP-TO-DATE
+> Task :wear:compileDebugShaders NO-SOURCE
+> Task :wear:generateDebugAssets UP-TO-DATE
+> Task :wear:mergeDebugAssets UP-TO-DATE
+> Task :wear:compressDebugAssets UP-TO-DATE
+> Task :wear:desugarDebugFileDependencies UP-TO-DATE
+> Task :wear:dexBuilderDebug UP-TO-DATE
+> Task :wear:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :wear:processDebugJavaRes UP-TO-DATE
+> Task :wear:mergeDebugJavaResource UP-TO-DATE
+> Task :wear:checkDebugDuplicateClasses UP-TO-DATE
+> Task :wear:mergeExtDexDebug UP-TO-DATE
+> Task :wear:mergeLibDexDebug UP-TO-DATE
+> Task :wear:mergeProjectDexDebug UP-TO-DATE
+> Task :wear:mergeDebugJniLibFolders UP-TO-DATE
+> Task :wear:mergeDebugNativeLibs NO-SOURCE
+> Task :wear:stripDebugDebugSymbols NO-SOURCE
+> Task :wear:validateSigningDebug UP-TO-DATE
+> Task :wear:writeDebugAppMetadata UP-TO-DATE
+> Task :wear:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :wear:packageDebug UP-TO-DATE
+> Task :wear:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :wear:assembleDebug UP-TO-DATE
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+
+> Task :app:compileDebugKotlin
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/GameScheduleFragment.kt:234:30 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/HealthFragment.kt:165:17 'requestPermissions(Array<(out) String!>, Int): Unit' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/HealthFragment.kt:186:27 'checkOpNoThrow(String, Int, String): Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/HomeFragment.kt:767:61 'getFromLocation(Double, Double, Int): (Mutable)List<Address!>?' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/MiniTrendView.kt:180:17 Variable 'dotPaint' is never used
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:94:33 Parameter 'pos' is never used, could be renamed to _
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:95:37 Parameter 'pos' is never used, could be renamed to _
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:97:29 Parameter 'pos' is never used, could be renamed to _
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:98:33 Parameter 'pos' is never used, could be renamed to _
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:533:13 Variable 'rbApp' is never used
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:889:51 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:940:30 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:1076:26 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleCombinedFragment.kt:1112:26 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/ScheduleFragment.kt:215:38 'getter for adapterPosition: Int' is deprecated. Deprecated in Java
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/StatsHighlightView.kt:41:17 Parameter 'maxLabel' is never used
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/StatsHighlightView.kt:41:53 Parameter 'minLabel' is never used
+w: file:///D:/Android/Projects/yibei/app/src/main/java/com/example/yibei/ui/StatsHighlightView.kt:41:89 Parameter 'avgLabel' is never used
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 50s
+69 actionable tasks: 16 executed, 53 up-to-date

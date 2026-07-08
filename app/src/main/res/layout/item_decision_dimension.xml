@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tvDimName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维度名称"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 选项A评分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="13sp"
+            android:textColor="#2196F3" />
+
+        <SeekBar
+            android:id="@+id/seekA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:progress="5"
+            android:progressTint="#2196F3"
+            android:thumbTint="#2196F3" />
+
+        <TextView
+            android:id="@+id/tvScoreA"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="14sp"
+            android:textColor="#2196F3"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 选项B评分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="13sp"
+            android:textColor="#FF9800" />
+
+        <SeekBar
+            android:id="@+id/seekB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:progress="5"
+            android:progressTint="#FF9800"
+            android:thumbTint="#FF9800" />
+
+        <TextView
+            android:id="@+id/tvScoreB"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="14sp"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E8E8E8"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

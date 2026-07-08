@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent">#FF9800</color>
+    <color name="background">#F5F7FA</color>
+
+    <color name="nav_selected">#2196F3</color>
+    <color name="nav_unselected">#999999</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="water_dark">#FF0288D1</color>
+    <color name="splash_bg">#FF0277BD</color>
+
+    <!-- 睡眠分期颜色 -->
+    <color name="sleep_awake">#FFD54F</color>
+    <color name="sleep_rem">#AB47BC</color>
+    <color name="sleep_light">#42A5F5</color>
+    <color name="sleep_deep">#1E88E5</color>
+</resources>

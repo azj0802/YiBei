@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 杯身（镂空）：外框 + 内框用 evenOdd 挖空 -->
+    <path
+        android:fillColor="#546E7A"
+        android:fillType="evenOdd"
+        android:pathData="M5,6 L5,18 C5,19.1 5.9,20 7,20 L17,20 C18.1,20 19,19.1 19,18 L19,6 Z
+                           M7,8 L17,8 L17,17.5 C17,18.3 16.3,19 15.5,19 L8.5,19 C7.7,19 7,18.3 7,17.5 Z" />
+
+    <!-- 杯中水面（在镂空区域内） -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M7,12 L17,12 L17,17.5 C17,18.3 16.3,19 15.5,19 L8.5,19 C7.7,19 7,18.3 7,17.5 Z" />
+
+    <!-- 把手 -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M19,8 L20,8 C21.1,8 22,8.9 22,10 L22,14 C22,15.1 21.1,16 20,16 L19,16 Z" />
+
+</vector>

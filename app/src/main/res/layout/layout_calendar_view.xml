@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="12dp">
+
+    <!-- 月份导航栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="上一月"
+            android:tint="#546E7A" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="#37474F"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_next"
+            android:contentDescription="下一月"
+            android:tint="#546E7A" />
+
+    </RelativeLayout>
+
+    <!-- 可收起区域 -->
+    <LinearLayout
+        android:id="@+id/calendar_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- 周/月切换 -->
+    <RadioGroup
+        android:id="@+id/rg_view_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周视图"
+            android:textSize="13sp"
+            android:textColor="#546E7A" />
+
+        <RadioButton
+            android:id="@+id/rb_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月视图"
+            android:textSize="13sp"
+            android:textColor="#546E7A"
+            android:checked="true"
+            android:layout_marginStart="16dp" />
+
+    </RadioGroup>
+
+    <!-- 星期标题行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="日" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="一" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="二" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="三" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="四" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="五" android:textSize="12sp" android:textColor="#90A4AE" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="六" android:textSize="12sp" android:textColor="#90A4AE" />
+
+    </LinearLayout>
+
+    <!-- 日历网格 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+    <!-- 收起/展开按钮 -->
+    <TextView
+        android:id="@+id/btn_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="▲ 收起日历"
+        android:textSize="12sp"
+        android:textColor="#90A4AE"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:background="?attr/selectableItemBackground" />
+
+</LinearLayout>

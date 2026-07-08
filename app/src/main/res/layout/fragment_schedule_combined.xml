@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 日历视图 -->
+        <include
+            android:id="@+id/calendar_view"
+            layout="@layout/layout_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 日程列表 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无内容，点击右下角添加"
+                android:textSize="15sp"
+                android:textColor="#999999"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_combined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="80dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 遮罩层 -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40000000"
+        android:visibility="gone"
+        android:clickable="true" />
+
+    <!-- 子按钮：二游便笺 -->
+    <LinearLayout
+        android:id="@+id/fab_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二游便笺"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="#CC333333"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="6dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_game_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#FF9800"
+            app:tint="#FFFFFF"
+            app:fabSize="mini"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="添加二游便笺"
+            android:elevation="6dp" />
+
+    </LinearLayout>
+
+    <!-- 子按钮：日程 -->
+    <LinearLayout
+        android:id="@+id/fab_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="168dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日程"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:background="#CC333333"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="6dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_schedule_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:backgroundTint="#4CAF50"
+            app:tint="#FFFFFF"
+            app:fabSize="mini"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:contentDescription="添加日程"
+            android:elevation="6dp" />
+
+    </LinearLayout>
+
+    <!-- 主 FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="添加"
+        app:backgroundTint="#2196F3"
+        app:tint="#FFFFFF"
+        app:fabSize="normal" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

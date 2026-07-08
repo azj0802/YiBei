@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="130dp"
+    android:viewportWidth="80"
+    android:viewportHeight="130">
+
+    <!-- 杯身轮廓（微梯形） -->
+    <path
+        android:strokeColor="#81D4FA"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M5,8 L75,8 L71,112 Q71,124 60,124 L20,124 Q9,124 9,112 Z" />
+
+    <!-- 杯口横线 -->
+    <path
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M3,8 L77,8" />
+
+</vector>
