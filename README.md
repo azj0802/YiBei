@@ -90,4 +90,8 @@ yibei/
 
 ## License
 
-MIT
+GNU General Public License v3.0
+
+Copyright (c) 2026 邱楷睿
+
+本程序是自由软件：你可以在 GNU GPLv3 许可证的条款下重新发布它和/或修改它。
